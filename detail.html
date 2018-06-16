@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Dropcast - Podcast Template from Codrops</title>
+      <link rel="stylesheet" href="assets/css/dropcast.css">
+      <link rel="author" href="humans.txt">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Rufina:400,700|Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+      <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #000000;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #A9A9A9;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+          /*#main {
+              transition: margin-left .5s;
+              padding: 16px;
+          }*/
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+      </style>
+    </head>
+    <body class="page--detail">
+      <nav>
+        <nav>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="tech_blog.html">Discussions</a>
+            <a href="old.html">Refresh Me</a>
+            <a href="new.html">What is _____?</a>
+            <a href="exp.html">Student Experiences</a>
+          </div>
+
+          <div class="logo nav__logo">
+            <span onclick="openNav()" style="cursor: pointer;"><img src="assets/images/logo.svg" alt="logo"/></span>
+          </div>
+
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->   
+          <ul class="nav__social">
+            <li><a href="#" class="nav_social__item"><i class="fab fa-google-play"></i></a></li>
+            <li><a href="#" class="nav_social__item"><i class="fab fa-itunes-note"></i></a></li>
+            <li><a href="#" class="nav_social__item"><i class="fas fa-rss-square"></i></a></li>
+          </ul>
+        </nav>
+      </nav>
+      <section class="site">
+        <div id="site__bg"></div>
+        <div class="left">
+          <label for="" class="site__label">Episode #1</label>
+          <h1 class="site__title site__title--separator">Linda Watkins</h1>
+        </div>
+        <div class="right">
+          <img src="assets/images/photos/original/1.png" alt="" class="episode__image">
+          <div class="audio-player site__playbar">
+            <div class="loading">
+              <div class="spinner"></div>
+            </div>
+            <button class="play-pause-btn play"></button>
+            <div class="controls">
+              <span class="current-time">0:00</span>
+              <div class="slider" data-direction="horizontal">
+                <div class="progress">
+                  <div class="pin" id="progress-pin" data-method="rewind"></div>
+                </div>
+              </div>
+              <span class="total-time">0:00</span>
+            </div>
+
+            <audio preload="true">
+              <source src="assets/audio/example.ogg" type="audio/ogg" />
+              <source src="assets/audio/example.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+          <h4 class="site__secondary_title">Show Notes</h4>
+          <p class="site__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <a href="#">industry's standard</a> dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the <a href="#">1960s</a> with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make <a href="#">a type specimen book</a>. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <div class="site__navigation">
+            <!-- toggle on the previous as needed -->
+            <a href="#" class="site__navigation_items site__navigation_items--left hidden">
+              <label for="">Previous Episode</label>
+              <h4>Dylan Perry</h4>
+            </a>
+            <a href="#" class="site__navigation_items site__navigation_items--right">
+              <label for="">Next Episode</label>
+              <h4>Dylan Perry</h4>
+            </a>
+          </div>
+        </div>
+      </section>
+      <script>
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+      <script src="assets/js/dropcast.js"></script>
+      <script src="assets/js/player.js"></script>
+    </body>
+</html>
