@@ -204,6 +204,8 @@ nav {
   position: relative;
   display: flex; }
   .episode:nth-child(1) .episode__image {
+    background-image: url(../images/photos/edited/1.png); }
+  .episode:nth-child(1) .episode__image.ab {
     background-image: url(../images/photos/edited/mayank.JPG); }
   .episode:nth-child(2) .episode__image {
     background-image: url(../images/photos/edited/2.png); }
@@ -214,6 +216,8 @@ nav {
   .episode:hover .episode__detail:before {
     width: 100%; }
   .episode:hover:nth-child(1) .episode__image {
+    background-image: url(../images/photos/original/1.png); }
+  .episode:hover:nth-child(1) .episode__image.ab {
     background-image: url(../images/photos/original/mayank.JPG); }
   .episode:hover:nth-child(2) .episode__image {
     background-image: url(../images/photos/original/2.png); }
