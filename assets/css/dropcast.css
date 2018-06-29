@@ -114,7 +114,7 @@ nav {
     animation: shake .8s ease-in-out; }
 
 .site {
-  padding: 2rem 3rem; }
+  padding: 1rem 2rem; }
 
 .site__title {
   font-size: 3rem;
@@ -204,7 +204,7 @@ nav {
   position: relative;
   display: flex; }
   .episode:nth-child(1) .episode__image {
-    background-image: url(../images/photos/edited/1.png); }
+    background-image: url(../images/photos/edited/mayank.JPG); }
   .episode:nth-child(2) .episode__image {
     background-image: url(../images/photos/edited/2.png); }
   .episode:nth-child(3) .episode__image {
@@ -214,7 +214,7 @@ nav {
   .episode:hover .episode__detail:before {
     width: 100%; }
   .episode:hover:nth-child(1) .episode__image {
-    background-image: url(../images/photos/original/1.png); }
+    background-image: url(../images/photos/original/mayank.JPG); }
   .episode:hover:nth-child(2) .episode__image {
     background-image: url(../images/photos/original/2.png); }
   .episode:hover:nth-child(3) .episode__image {
@@ -254,6 +254,23 @@ nav {
     height: 50px;
     background-size: cover; }
   .episode__media:hover {
+    transform-origin: 0 50%;
+    transform: perspective(1000px) rotateY(-10deg) translate3d(-3px, 0, 0); }
+
+  .about {
+  position: relative;
+  width: 30%;
+  transition: .2s ease-out; }
+  .about:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-image: url("../images/pixel-corner.svg");
+    width: 50px;
+    height: 50px;
+    background-size: cover; }
+  .about:hover {
     transform-origin: 0 50%;
     transform: perspective(1000px) rotateY(-10deg) translate3d(-3px, 0, 0); }
 
@@ -419,7 +436,10 @@ nav {
   .site {
     padding-top: 4rem;
     padding-left: 4rem;
-    flex: 1; }
+    padding-right: 4rem; }
+  .top {
+    max-width: 400px
+  }
 
   /* nav */
   .nav__list {
@@ -439,13 +459,13 @@ nav {
   .episodes {
     display: flex;
     flex-wrap: wrap;
-    margin: 160px 0 0 50px;
-    max-width: 800px; }
+    margin: 160px 0 100px 50px;
+    max-width: 1250px; }
 
   .episode {
     flex-direction: column;
-    max-width: 220px;
-    margin-right: 2rem;
+    max-width: 256px;
+    margin-right: 3rem;
     margin-bottom: 3rem; }
     .episode:hover .episode__detail:before {
       display: none; }
@@ -455,11 +475,17 @@ nav {
 
   .episode__media {
     width: 100%;
-    height: 294px;
-    max-width: 200px; }
+    height: 144px;
+    width: 256px; }
+  
+  .about {
+    width: 100%;
+    width: 256px;
+    height: 384px; }
 
   .episode__detail {
-    width: 100%; }
+    width: 100%;
+    max-width: 256px; }
 
   .episode__description {
     font-size: 1rem;
