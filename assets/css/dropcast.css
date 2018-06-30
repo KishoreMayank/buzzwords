@@ -204,27 +204,60 @@ nav {
   position: relative;
   display: flex; }
   .episode:nth-child(1) .episode__image {
-    background-image: url(../images/photos/edited/1.png); }
+    background-image: url(../images/photos/edited/duplex.png); }
+  .episode:nth-child(2) .episode__image {
+    background-image: url(../images/photos/edited/mojave.jpg); }
+  .episode:nth-child(3) .episode__image {
+    background-image: url(../images/photos/edited/github.jpg); }
+
   .episode:nth-child(1) .episode__image.ab {
     background-image: url(../images/photos/edited/mayank.JPG); }
-  .episode:nth-child(2) .episode__image {
-    background-image: url(../images/photos/edited/2.png); }
-  .episode:nth-child(3) .episode__image {
-    background-image: url(../images/photos/edited/3.png); }
-  .episode:nth-child(4) .episode__image {
-    background-image: url(../images/photos/edited/4.png); }
+  .episode:nth-child(2) .episode__image.ab {
+    background-image: url(../images/photos/edited/principal.jpg); }
+  .episode:nth-child(3) .episode__image.ab {
+    background-image: url(../images/photos/edited/granular.jpg); }
+
+  .episode:nth-child(1) .episode__image.old {
+    background-image: url(../images/photos/edited/nlp.png); }
+  .episode:nth-child(2) .episode__image.old {
+    background-image: url(../images/photos/edited/ai.png); }
+  .episode:nth-child(3) .episode__image.old {
+    background-image: url(../images/photos/edited/ml.png); }
+
+  .episode:nth-child(1) .episode__image.exp {
+    background-image: url(../images/photos/edited/principal.jpg); }
+  .episode:nth-child(2) .episode__image.exp {
+    background-image: url(../images/photos/edited/bazaarvoice.png); }
+  .episode:nth-child(3) .episode__image.exp {
+    background-image: url(../images/photos/edited/granular.jpg); }
+
   .episode:hover .episode__detail:before {
     width: 100%; }
   .episode:hover:nth-child(1) .episode__image {
-    background-image: url(../images/photos/original/1.png); }
+    background-image: url(../images/photos/original/duplex.png); }
+  .episode:hover:nth-child(2) .episode__image {
+    background-image: url(../images/photos/original/mojave.jpg); }
+  .episode:hover:nth-child(3) .episode__image {
+    background-image: url(../images/photos/original/github.jpg); }
+
   .episode:hover:nth-child(1) .episode__image.ab {
     background-image: url(../images/photos/original/mayank.JPG); }
-  .episode:hover:nth-child(2) .episode__image {
-    background-image: url(../images/photos/original/2.png); }
-  .episode:hover:nth-child(3) .episode__image {
-    background-image: url(../images/photos/original/3.png); }
-  .episode:hover:nth-child(4) .episode__image {
-    background-image: url(../images/photos/original/4.png); }
+
+  .episode:hover:nth-child(1) .episode__image.old {
+    background-image: url(../images/photos/original/nlp.png); }
+  .episode:hover:nth-child(2) .episode__image.old {
+    background-image: url(../images/photos/original/ai.png); }
+  .episode:hover:nth-child(3) .episode__image.old {
+    background-image: url(../images/photos/original/ml.png); }
+
+  .episode:hover:nth-child(1) .episode__image.exp {
+    background-image: url(../images/photos/original/principal.jpg); }
+  .episode:hover:nth-child(2) .episode__image.exp {
+    background-image: url(../images/photos/original/bazaarvoice.png); }
+  .episode:hover:nth-child(3) .episode__image.exp {
+    background-image: url(../images/photos/original/granular.jpg); }
+
+
 
 .episode__number {
   display: none;
