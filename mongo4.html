@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Dropcast - Podcast Template from Codrops</title>
+      <link rel="stylesheet" href="assets/css/dropcast.css">
+      <link rel="author" href="humans.txt">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Rufina:400,700|Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+      <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #000000;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #A9A9A9;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+          /*#main {
+              transition: margin-left .5s;
+              padding: 16px;
+          }*/
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+      </style>
+    </head>
+    <body class="page--detail">
+      <nav>
+        <nav>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="tech_blog.html">Discussions</a>
+            <!-- <a href="old.html">Refresh Me</a> -->
+            <a href="new.html">What is _____?</a>
+            <a href="exp.html">Student Experiences</a>
+          </div>
+
+          <div class="logo nav__logo">
+            <span onclick="openNav()" style="cursor: pointer;"><img src="assets/images/logo.svg" alt="logo"/></span>
+          </div>
+
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->   
+          <!-- <ul class="nav__social">
+            <li><a href="#" class="nav_social__item"><i class="fab fa-google-play"></i></a></li>
+            <li><a href="#" class="nav_social__item"><i class="fab fa-itunes-note"></i></a></li>
+            <li><a href="#" class="nav_social__item"><i class="fas fa-rss-square"></i></a></li>
+          </ul> -->
+        </nav>
+      </nav>
+      <section class="site">
+        <div id="site__bg"></div>
+        <!-- <div class="left">
+          <label for="" class="site__label">Episode #1</label>
+          <h1 class="site__title site__title--separator">Data Structures</h1>
+        </div> -->
+        <div class="right">
+          <!-- <img src="assets/images/photos/original/1.png" alt="" class="episode__image"> -->  
+          <!-- <div class="audio-player site__playbar"> -->
+            <!-- <div class="loading">
+              <div class="spinner"></div>
+            </div> -->
+            <!-- <button class="play-pause-btn play"></button> -->
+            <!-- <div class="controls">
+              <span class="current-time">0:00</span>
+              <div class="slider" data-direction="horizontal">
+                <div class="progress">
+                  <div class="pin" id="progress-pin" data-method="rewind"></div>
+                </div>
+              </div>
+              <span class="total-time">0:00</span>
+            </div> -->
+
+              <!-- <audio preload="true">
+                <source src="assets/audio/example.ogg" type="audio/ogg" />
+                <source src="assets/audio/example.mp3" type="audio/mpeg">
+              </audio> -->
+          <!-- </div> -->
+          <div class="left">
+            <label for="" class="site__label">Episode #2</label>
+            <h1 class="site__title site__title--separator" style="color: black">MongoDB: Leading the NoSQL Charge</h1>
+          </div>
+          <h4 class="site__secondary_title">Written By: <a href="sohan.html">Sohan Choudhury</a></h4><br />
+          <center><img class="shadow" src="assets/images/photos/original/mongo.jpg"></center>
+          <p class="site__description">
+Hey there! I’m Sohan, Editor here at Buzzwords. On Wednesday, June 27th, I had the opportunity to head to New York City for MongoDB World 2018. At the company’s flagship annual conference, MongoDB 4.0 was revealed, along with a plethora of features to help companies make the switch to non-relational databases for good.<br /><br />
+
+So, what even are non-relational (or NoSQL) databases? Well, they’re quite different from relational databases. Whereas traditional databases such as MySQL utilize a table based structure to store data, in non-relational variants, everything is document based. Documents are stored in an unordered fashion, often with little structure. Every document represents an object— whether it be a customer or an item for sale— and has any and all corresponding information— from name and age to price and remaining inventory. This allows for greater flexibility in data storage and reduces the time and effort spent on manually structuring data.<br /><br />
+
+Increasingly, companies have been making the decision to go non-relational, with MongoDB ranking as the 5th most popular database despite only being introduced in 2009. The new kid on the block is gaining substantial street cred, and it’s no surprise why. With faster access to data, great scalability, and familiar JSON style documents (not to mention professional MongoDB support), the benefits are clear in the age of big data. I’ve been using MongoDB at my summer internship, and can attest to its ease of use and quick queries.<br /><br />
+
+Currently, MongoDB’s biggest challenges include growing its customer base and getting users to pay for premium services. As an open source product, MongoDB’s business model is built on a foundation of developers and support features, making customer acquisition and retention vital to its success. This focus was clear at the main keynote of the conference, where CEO Dev Ittycheria took the stage. After speaking on the company’s recent rapid growth (and surging stock price following an October 2017 IPO), he shifted the spotlight to customer stories. Executives and developers alike from companies such as Travelers Insurance, Braze, and Coinbase took to the stage to discuss how using MongoDB, and particularly Atlas, the company’s premium cloud service offering, have helped to support rapid growth by meeting business needs.<br /><br />
+
+The huge focus on customer stories definitely caught me by surprise. All in all, Ittycheria largely served as a host who nicely framed and contextualized a variety of testimonials.  This approach was clearly qualified, judging by the atmosphere of the room. Nearly every person I spoke to at the conference seemed to be genuinely excited about the product. Customer stories were everywhere— Ittycheria had simply chosen the most impactful ones. From start-up founders to employees at legacy companies like Pfizer or IBM, it was clear that MongoDB was a growing force of welcomed disruption.<br /><br />
+
+The excitement was only elevated with the live rollout of MongoDB 4.0. For this portion of the keynote, CTO and Co-Founder Eliot Horowitz took the lead and did not disappoint. He took direct aim at traditional databases, jokingly referring to SQL as “Shitty Query Language” and unveiled features clearly meant to tackle the advantages of relational databases.<br /><br />
+
+So what’s new? The principal benefit of 4.0 is that it brings ACID (Atomic, Consistent, Isolated, Durable) transactions to MongoDB, and in a way that was hitherto unheard of for non-relational databases. Why does this matter? I’ll borrow, with some modification, from a case example provided by Horowitz.<br /><br />
+
+Say you’ve got an online store, where you’re selling souvenirs to support your favorite local soccer team, Buzzwords FC. With MongoDB 4.0’s transactions, all of your inventory will be tracked accurately as purchases orders come in. If, for example, a customer orders one $35 jersey from your site, in one transaction the customer’s total will increase by $35 and your available inventory for that jersey will decrease by one. Where previously a mid-transaction failure (often caused by network failures or server crashes) would have caused major problems, multi-document ACID prevents that.<br /><br />
+
+Got die-hard Buzzwords FC supporters in Europe that just have to get those personalized hats? Atlas’s global clusters help with GDPR compliance by allowing you to put their data in the geographical location that you need it, where you can then read and write from. With availability through Google Cloud Platform, AWS, and Microsoft Azure, there’s a rich variety of server locations to choose from.<br /><br />
+
+That’s enough with our case example for now. What does this all mean for you? <br /><br />
+
+Earlier I described MongoDB as a growing force of welcomed disruption. That’s conditionally true. In order to truly welcome the changes, it’s imperative to understand non-relational technology and its advances in shaping the future of data usage and storage. Stay up to date in this ever changing industry. The resources are out there!<br /><br />
+
+MongoDB has already made strides in education — check out MongoDB University for official online courses and certifications from the source. And for top notch tech updates, refreshers, and more? Here’s a site that isn’t half bad :).<br /><br />
+          </p>
+          <div class="site__navigation">
+            <!-- toggle on the previous as needed -->
+            <a href="mongo4.html" class="site__navigation_items site__navigation_items--left">
+              <label for="">Previous Episode</label>
+              <h4>Google Duplex</h4>
+            </a>
+            <a href="msftgit.html" class="site__navigation_items site__navigation_items--right">
+              <label for="">Next Episode</label>
+              <h4>Microsoft + GitHub</h4>
+            </a>
+          </div>
+        </div>
+      </section>
+      <script>
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+      <script src="assets/js/dropcast.js"></script>
+      <script src="assets/js/player.js"></script>
+    </body>
+</html>

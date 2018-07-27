@@ -128,7 +128,7 @@ nav {
   font-size: 3rem;
   margin-bottom: 1rem; 
   border-bottom: 3px solid #F79E77; 
-  width: 40%;
+  width: 50%;
   content: '';
   left: 0;
   bottom: -1.3rem; }
@@ -215,7 +215,7 @@ nav {
   .episode:nth-child(1) .episode__image {
     background-image: url(../images/photos/edited/duplex.png); }
   .episode:nth-child(2) .episode__image {
-    background-image: url(../images/photos/edited/mojave.jpg); }
+    background-image: url(../images/photos/edited/mongo.jpg); }
   .episode:nth-child(3) .episode__image {
     background-image: url(../images/photos/edited/github.jpg); }
 
@@ -225,6 +225,10 @@ nav {
     background-image: url(../images/photos/edited/principal.jpg); }
   .episode:nth-child(3) .episode__image.ab {
     background-image: url(../images/photos/edited/granular.jpg); }
+  .episode:nth-child(4) .episode__image.ab {
+    background-image: url(../images/photos/edited/granular.jpg); }
+  .episode:nth-child(5) .episode__image.ab {
+    background-image: url(../images/photos/edited/vishnu.png); }
 
   .episode:nth-child(1) .episode__image.old {
     background-image: url(../images/photos/edited/nlp.png); }
@@ -245,12 +249,20 @@ nav {
   .episode:hover:nth-child(1) .episode__image {
     background-image: url(../images/photos/original/duplex.png); }
   .episode:hover:nth-child(2) .episode__image {
-    background-image: url(../images/photos/original/mojave.jpg); }
+    background-image: url(../images/photos/original/mongo.jpg); }
   .episode:hover:nth-child(3) .episode__image {
     background-image: url(../images/photos/original/github.jpg); }
 
   .episode:hover:nth-child(1) .episode__image.ab {
     background-image: url(../images/photos/original/mayank.JPG); }
+  .episode:hover:nth-child(2) .episode__image.ab {
+    background-image: url(../images/photos/original/mayank.JPG); }
+  .episode:hover:nth-child(3) .episode__image.ab {
+    background-image: url(../images/photos/original/mayank.JPG); }
+  .episode:hover:nth-child(4) .episode__image.ab {
+    background-image: url(../images/photos/original/mayank.JPG); }
+  .episode:hover:nth-child(5) .episode__image.ab {
+    background-image: url(../images/photos/original/vishnu.png); }
 
   .episode:hover:nth-child(1) .episode__image.old {
     background-image: url(../images/photos/original/nlp.png); }
