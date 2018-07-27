@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Dropcast - Podcast Template from Codrops</title>
+      <link rel="stylesheet" href="assets/css/dropcast.css">
+      <link rel="author" href="humans.txt">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Rufina:400,700|Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+      <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #000000;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #A9A9A9;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+          /*#main {
+              transition: margin-left .5s;
+              padding: 16px;
+          }*/
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+      </style>
+    </head>
+    <body class="page--detail">
+      <nav>
+        <nav>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="tech_blog.html">Discussions</a>
+            <a href="old.html">Refresh Me</a>
+            <a href="new.html">What is _____?</a>
+            <a href="exp.html">Student Experiences</a>
+          </div>
+
+          <div class="logo nav__logo">
+            <span onclick="openNav()" style="cursor: pointer;"><img src="assets/images/logo.svg" alt="logo"/></span>
+          </div>
+
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->   
+          <!-- <ul class="nav__social">
+            <li><a href="#" class="nav_social__item"><i class="fab fa-google-play"></i></a></li>
+            <li><a href="#" class="nav_social__item"><i class="fab fa-itunes-note"></i></a></li>
+            <li><a href="#" class="nav_social__item"><i class="fas fa-rss-square"></i></a></li>
+          </ul> -->
+        </nav>
+      </nav>
+      <section class="site">
+        <div id="site__bg"></div>
+        <!-- <div class="left">
+          <label for="" class="site__label">Episode #1</label>
+          <h1 class="site__title site__title--separator">Data Structures</h1>
+        </div> -->
+        <div class="right">
+          <!-- <img src="assets/images/photos/original/1.png" alt="" class="episode__image"> -->  
+          <!-- <div class="audio-player site__playbar"> -->
+            <!-- <div class="loading">
+              <div class="spinner"></div>
+            </div> -->
+            <!-- <button class="play-pause-btn play"></button> -->
+            <!-- <div class="controls">
+              <span class="current-time">0:00</span>
+              <div class="slider" data-direction="horizontal">
+                <div class="progress">
+                  <div class="pin" id="progress-pin" data-method="rewind"></div>
+                </div>
+              </div>
+              <span class="total-time">0:00</span>
+            </div> -->
+
+              <!-- <audio preload="true">
+                <source src="assets/audio/example.ogg" type="audio/ogg" />
+                <source src="assets/audio/example.mp3" type="audio/mpeg">
+              </audio> -->
+          <!-- </div> -->
+          <div class="left">
+            <label for="" class="site__label">Episode #3</label>
+            <h1 class="site__title site__title--separator" style="color: black">Microsoft + GitHub</h1>
+          </div>
+          <h4 class="site__secondary_title">Written By: Mayank Kishore</h4><br />
+          <center><img src="assets/images/photos/original/github.jpg" height="500"></center>
+          <p class="site__description">
+Google Duplex - How it works & Implications<br /><br />
+
+Imagine a future where every task can be achieved with a simple voice command.<br />                   
+Google gave us a sneak peek into what this future will look like.<br /><br />
+
+During Google I/O this past month, Google demonstrated the capabilities of Google Duplex, an ambitious project to advance artificial intelligence. Duplex is a virtual assistant that can book reservations and make phone calls for you, all with a seemingly human voice. This technology is the latest and most significant innovation of the artificial intelligence revolution. So how does it work?<br /><br />
+
+Before I go in depth on how this technology works, I need to define a few high-level terms. Google Duplex uses a recurrent neural network and is built using TensorFlow Extended. A neural network is a computing system that is trained to do an automated task. Using training sets, the neural network is given a problem with a solution. The model trains itself by guessing the answer to these problems and adjusting itself as it gets closer to the solution. Using what it has learned, the neural net is able to solve new problem. Recurrent neural networks are perfect for tasks like speech recognition as it is able to work with data that is unsegmented. Unsegmented data is data that does not have a direct correlations. They are a class of artificial neural networks where connections between nodes form a directed graph along a sequence. This kind of neural net uses its memory to process inputs which makes it well suited for speech recognition. TensorFlow Extended is a machine learning platform implemented by Google. TensorFlow is a software library that aids with high performance numerical computation. It has strong support for machine learning and deep learning and has a flexible numerical computation core that aids with its calculations. Using these two technologies Google was able to make a very advanced robotic assistant that can use all of the data collected to mimic human conversation.<br /><br />
+
+To make Google Duplex so realistic, Google used all of its collected conversation data and its Automatic Speech Recognition (ASR) technology to provide data points for the machine learning model. They trained each task separately and then combined all of the data to make the most effective responses. As a final step Google used optimization from TensorFlow Extended. This further improved the human-like aspects of Duplex.<br /><br />
+
+In order to make Duplex sound natural, Google used a concatenative and synthesis text to speech engine (Tacotron and WaveNet) to control the intonation of the assistant based on the situation. Additionally, for complex responses, Google added fillers such as "umm" or "hmm" which mimics the sounds a human makes while gathering their thoughts. In order to make the response times more accurate latency was added to ensure that simple responses were immediate while complex ones took a bit more time to process.<br /><br />
+
+Occasionally, Duplex is faced with too complex of a task in which case a human operator will take over. Duplex will take the data from this interaction and learn from the experience, which will further improve the scope of Duplex. As this technology continues to improve, it will continue to make our lives easier as we spend less time on mundane phone calls.<br /><br />
+
+
+Google Duplex is the largest leap for robotic assistants that we have seen so far. It is capable of placing calls for its users for tasks such as making reservations to restaurants or booking a hair salon appointments. What makes this extremely impressive is that Google Duplex sounds like a human, can understand complex statements and understand the context of the conversation. Currently Google Duplex can only call restaurants, hair salons, and get the hours from a business. As this technology continues to improve, which it will do so rapidly, the future implications of Google Duplex are far reaching.<br />
+This is just the beginning.<br /><br />
+
+Just as the rise of the autonomous vehicle has signaled the end of commercial driving and transportation jobs, so does Google Duplex signal the end of customer service jobs across the board. For example, many tech support jobs spend more than half of their calls answering simple questions that require simple solutions. With technology like Duplex, these jobs will become obsolete. As this technology evolves it will be able to use your voice commands to not only make phone calls but also physically interact with your environment. Having a robotic assistant in your house could help with daily chores or even make you a perfect cup of coffee! Conversely, this rapid improvement of artificial intelligence (AI) could have unintended consequences.<br /><br />
+
+We can all imagine a future where AI is a part of life. We’ve been told that AI will reduce the need for physical human labors and increase the demand for human intelligence. Or will it? As we progressively increase the capabilities of AI, it will begin to accomplish more complex tasks.<br /><br />
+
+Personally, I look at Google Duplex with optimism and with excitement for what the future has to hold. Ever since I witnessed the intelligence of J.A.R.V.I.S. in Iron Man in 2008, I have dreamt of a future where all of mundane household tasks can be taken care of with simple voice commands.  Voice assistants continue to grow ever smarter as products for smarter homes become more prevalent indicating the rise of the fully automated house in the near future. It may seem like artificial intelligence will take over our lives but at in the present artificial intelligence will serve to free up our time and accomplish menial tasks for us to make our lives easier. I look forward to the day I can stop booking my own hair appointments. 
+          </p>
+          <div class="site__navigation">
+            <!-- toggle on the previous as needed -->
+            <a href="msftgit.html" class="site__navigation_items site__navigation_items--left hidden">
+              <label for="">Previous Episode</label>
+              <h4>Dylan Perry</h4>
+            </a>
+            <a href="msftgit.html" class="site__navigation_items site__navigation_items--right">
+              <label for="">Next Episode</label>
+              <h4>Microsoft</h4>
+            </a>
+          </div>
+        </div>
+      </section>
+      <script>
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+      <script src="assets/js/dropcast.js"></script>
+      <script src="assets/js/player.js"></script>
+    </body>
+</html>
