@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Dropcast - Podcast Template from Codrops</title>
+      <link rel="stylesheet" href="assets/css/dropcast.css">
+      <link rel="author" href="humans.txt">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Rufina:400,700|Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+      <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #000000;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #A9A9A9;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+          /*#main {
+              transition: margin-left .5s;
+              padding: 16px;
+          }*/
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+      </style>
+    </head>
+    <body class="page--detail">
+      <nav>
+        <nav>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="about.html">About Us</a>
+            <a href="index.html">Buzzwords</a>
+            <a href="sci.html">Sciwords</a>
+            <a href="new.html">What is _____?</a>
+            <a href="exp.html">Student Experiences</a>
+          </div>
+
+          <div class="logo nav__logo">
+            <span onclick="openNav()" style="cursor: pointer;"><img src="assets/images/logo.svg" alt="logo"/></span>
+          </div>
+
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->   
+          <!-- <ul class="nav__social">
+            <li><a href="#" class="nav_social__item"><i class="fab fa-google-play"></i></a></li>
+            <li><a href="#" class="nav_social__item"><i class="fab fa-itunes-note"></i></a></li>
+            <li><a href="#" class="nav_social__item"><i class="fas fa-rss-square"></i></a></li>
+          </ul> -->
+        </nav>
+      </nav>
+      <section class="site">
+        <div id="site__bg"></div>
+        <!-- <div class="left">
+          <label for="" class="site__label">Episode #1</label>
+          <h1 class="site__title site__title--separator">Data Structures</h1>
+        </div> -->
+        <div class="right">
+          <!-- <img src="assets/images/photos/original/1.png" alt="" class="episode__image"> -->  
+          <!-- <div class="audio-player site__playbar"> -->
+            <!-- <div class="loading">
+              <div class="spinner"></div>
+            </div> -->
+            <!-- <button class="play-pause-btn play"></button> -->
+            <!-- <div class="controls">
+              <span class="current-time">0:00</span>
+              <div class="slider" data-direction="horizontal">
+                <div class="progress">
+                  <div class="pin" id="progress-pin" data-method="rewind"></div>
+                </div>
+              </div>
+              <span class="total-time">0:00</span>
+            </div> -->
+
+              <!-- <audio preload="true">
+                <source src="assets/audio/example.ogg" type="audio/ogg" />
+                <source src="assets/audio/example.mp3" type="audio/mpeg">
+              </audio> -->
+          <!-- </div> -->
+          <div class="left">
+            <label for="" class="site__label">Episode #1</label>
+            <h1 class="site__title site__title--separator" style="color: black">Mayank&nbsp;Kishore</h1>
+          </div>
+          <!-- <h4 class="site__secondary_title">Written By: <a href="mayank.html">Mayank Kishore</a></h4><br /> -->
+          <!-- <center><img class="shadow" src="assets/images/photos/original/github.jpg"></center> -->
+          <p class="site__description">
+          <img src="assets/images/photos/original/mayank.jpg" height="" alt="" style="float: left; width: 40%; padding: 0px 25px 0px 0px"> 
+          I am a second year Computer Science student at the Georgia Institute of Technology exploring a variety of fields in software development and data science through many interesting projects and courses. This past summer, I worked as a data analytics engineer in Austin at Bazaarvoice where I developed a quality index for consumer reviews. While I thoroughly enjoyed my experience at Bazaarvoice, I have been exploring a multitude of algorithmic concepts and have begun to develop an interest in the development side of Computer Science. Outside of work, I like to keep up with the NBA and 
+          </p>
+          <div class="site__navigation">
+            <!-- toggle on the previous as needed -->
+            <a href="mongo4.html" class="site__navigation_items site__navigation_items--left hidden">
+              <label for="">Previous Episode</label>
+              <h4>Mongo 4</h4>
+            </a>
+            <a href="chinmay.html" class="site__navigation_items site__navigation_items--right">
+              <label for="">Next Episode</label>
+              <h4>Chinmay</h4>
+            </a>
+          </div>
+        </div>
+      </section>
+      <script>
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+      <script src="assets/js/dropcast.js"></script>
+      <script src="assets/js/player.js"></script>
+    </body>
+</html>
