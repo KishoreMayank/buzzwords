@@ -213,45 +213,60 @@ nav {
   position: relative;
   display: flex; }
   .episode:nth-child(1) .episode__image {
-    background-image: url(../images/photos/edited/duplex.png); }
+    background-image: url(../images/photos/original/duplex.png); }
   .episode:nth-child(2) .episode__image {
-    background-image: url(../images/photos/edited/mongo.jpg); }
+    background-image: url(../images/photos/original/mongo.jpg); }
   .episode:nth-child(3) .episode__image {
-    background-image: url(../images/photos/edited/github.jpg); }
+    background-image: url(../images/photos/original/github.jpg); }
 
   .episode:nth-child(1) .episode__image.ab {
     background-image: url(../images/photos/edited/mayank.JPG); }
   .episode:nth-child(2) .episode__image.ab {
-    background-image: url(../images/photos/edited/coming_soon.png); }
+    background-image: url(../images/photos/original/coming_soon.png); }
   .episode:nth-child(3) .episode__image.ab {
-    background-image: url(../images/photos/edited/coming_soon.png); }
+    background-image: url(../images/photos/original/coming_soon.png); }
   .episode:nth-child(4) .episode__image.ab {
-    background-image: url(../images/photos/edited/coming_soon.png); }
+    background-image: url(../images/photos/original/coming_soon.png); }
   .episode:nth-child(5) .episode__image.ab {
     background-image: url(../images/photos/edited/vishnu.jpg); }
+  .episode:nth-child(6) .episode__image.ab {
+    background-image: url(../images/photos/edited/pranav.jpg); }
 
   .episode:nth-child(1) .episode__image.sci {
-    background-image: url(../images/photos/edited/coming_soon.png); }
+    background-image: url(../images/photos/original/coming_soon.png); }
   .episode:nth-child(2) .episode__image.sci {
-    background-image: url(../images/photos/edited/coming_soon.png); }
+    background-image: url(../images/photos/original/coming_soon.png); }
   .episode:nth-child(3) .episode__image.sci {
-    background-image: url(../images/photos/edited/coming_soon.png); }
+    background-image: url(../images/photos/original/coming_soon.png); }
 
   .episode:nth-child(1) .episode__image.new {
-    background-image: url(../images/photos/edited/coming_soon.png); }
+    background-image: url(../images/photos/original/coming_soon.png); }
   .episode:nth-child(2) .episode__image.new {
-    background-image: url(../images/photos/edited/coming_soon.png); }
+    background-image: url(../images/photos/original/coming_soon.png); }
   .episode:nth-child(3) .episode__image.new {
-    background-image: url(../images/photos/edited/coming_soon.png); }
+    background-image: url(../images/photos/original/coming_soon.png); }
 
   .episode:nth-child(1) .episode__image.exp {
-    background-image: url(../images/photos/edited/microsoft.jpg); }
+    background-image: url(../images/photos/original/microsoft.jpg); }
   .episode:nth-child(2) .episode__image.exp {
-    background-image: url(../images/photos/edited/principal.jpg); }
+    background-image: url(../images/photos/original/principal.jpg); }
   .episode:nth-child(3) .episode__image.exp {
-    background-image: url(../images/photos/edited/bazaarvoice.png); }
+    background-image: url(../images/photos/original/bazaarvoice.png); }
   .episode:nth-child(4) .episode__image.exp {
-    background-image: url(../images/photos/edited/granular.jpg); }
+    background-image: url(../images/photos/original/granular.jpg); }
+  .episode:nth-child(5) .episode__image.exp {
+    background-image: url(../images/photos/original/JHU_WU_LAB.png); }
+  .episode:nth-child(6) .episode__image.exp {
+    background-image: url(../images/photos/original/everbridge.png); }
+  .episode:nth-child(7) .episode__image.exp {
+    background-image: url(../images/photos/original/DecisivEdge.png); }
+
+  .episode:nth-child(1) .episode__image.mk {
+    background-image: url(../images/photos/edited/mayank.JPG); }
+  .episode:nth-child(2) .episode__image.mk {
+    background-image: url(../images/photos/original/stars.jpg); }
+  .episode:nth-child(3) .episode__image.mk {
+    background-image: url(../images/photos/original/coming_soon.png); }
 
   .episode:hover .episode__detail:before {
     width: 100%; }
@@ -272,6 +287,8 @@ nav {
     background-image: url(../images/photos/original/coming_soon.png); }
   .episode:hover:nth-child(5) .episode__image.ab {
     background-image: url(../images/photos/original/vishnu.jpg); }
+  .episode:hover:nth-child(6) .episode__image.ab {
+    background-image: url(../images/photos/original/pranav.jpg); }
 
   .episode:hover:nth-child(1) .episode__image.sci {
     background-image: url(../images/photos/original/coming_soon.png); }
@@ -295,6 +312,19 @@ nav {
     background-image: url(../images/photos/original/bazaarvoice.png); }
   .episode:hover:nth-child(4) .episode__image.exp {
     background-image: url(../images/photos/original/granular.jpg); }
+  .episode:hover:nth-child(5) .episode__image.exp {
+    background-image: url(../images/photos/original/JHU_WU_LAB.png); }
+  .episode:hover:nth-child(6) .episode__image.exp {
+    background-image: url(../images/photos/original/everbridge.png); }
+  .episode:hover:nth-child(7) .episode__image.exp {
+    background-image: url(../images/photos/original/DecisivEdge.png); }
+
+  .episode:hover:nth-child(1) .episode__image.mk {
+    background-image: url(../images/photos/original/mayank.JPG); }
+  .episode:hover:nth-child(2) .episode__image.mk {
+    background-image: url(../images/photos/original/stars.jpg); }
+  .episode:hover:nth-child(3) .episode__image.mk {
+    background-image: url(../images/photos/original/coming_soon.png); }
 
 
 
@@ -585,7 +615,7 @@ nav {
   .episodes {
     display: flex;
     flex-wrap: wrap;
-    margin: 160px 0 100px 50px;
+    margin: 180px 0 100px 50px;
     max-width: 1250px; }
 
   .episode {
