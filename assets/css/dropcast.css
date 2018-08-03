@@ -255,7 +255,7 @@ nav {
   .episode:nth-child(4) .episode__image.exp {
     background-image: url(../images/photos/original/granular.jpg); }
   .episode:nth-child(5) .episode__image.exp {
-    background-image: url(../images/photos/original/JHU_WU_LAB.png); }
+    background-image: url(../images/photos/original/JHU_WU_Lab.png); }
   .episode:nth-child(6) .episode__image.exp {
     background-image: url(../images/photos/original/everbridge.png); }
   .episode:nth-child(7) .episode__image.exp {
@@ -313,7 +313,7 @@ nav {
   .episode:hover:nth-child(4) .episode__image.exp {
     background-image: url(../images/photos/original/granular.jpg); }
   .episode:hover:nth-child(5) .episode__image.exp {
-    background-image: url(../images/photos/original/JHU_WU_LAB.png); }
+    background-image: url(../images/photos/original/JHU_WU_Lab.png); }
   .episode:hover:nth-child(6) .episode__image.exp {
     background-image: url(../images/photos/original/everbridge.png); }
   .episode:hover:nth-child(7) .episode__image.exp {
