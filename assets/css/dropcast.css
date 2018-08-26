@@ -240,7 +240,7 @@ nav {
     background-image: url(../images/photos/original/coming_soon.png); }
 
   .episode:nth-child(1) .episode__image.new {
-    background-image: url(../images/photos/original/coming_soon.png); }
+    background-image: url(../images/photos/original/macbook.png); }
   .episode:nth-child(2) .episode__image.new {
     background-image: url(../images/photos/original/coming_soon.png); }
   .episode:nth-child(3) .episode__image.new {
@@ -307,7 +307,7 @@ nav {
     background-image: url(../images/photos/original/coming_soon.png); }
 
   .episode:hover:nth-child(1) .episode__image.new {
-    background-image: url(../images/photos/original/coming_soon.png); }
+    background-image: url(../images/photos/original/macbook.png); }
   .episode:hover:nth-child(2) .episode__image.new {
     background-image: url(../images/photos/original/coming_soon.png); }
   .episode:hover:nth-child(3) .episode__image.new {
